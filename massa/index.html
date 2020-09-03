@@ -1,97 +1,90 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Massa</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robot:100,400,700&display=swap" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Robot:100,400,700&display=swap"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="logo" />
-        </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="logo" />
+      </div>
 
-        <form class="sign-up" action="#">
+        <div class="sign-in" >
+         <form action="#">
             <input type="email" placeholder="Email" />
-            <input type="password" />
-
-            <button type="submit">Entrar</button>
-        </form>
+            <input type="password" placeholder="Senha" />
+            <button class="button primary" type="submit">Entrar</button>
+         </form>
+        </div>
     </header>
 
     <main>
-        <section class="intro">
-            <h1>Ajudamos <strong>programadores</strong> a conseguirem seus <strong>primeiros empregos</strong>.</h1>
-
-            <p>Mais de 100 mil desenvolvedores já conseguiramo seu primeiro emprego usando nosso sistema</p>
-            <a href="#">Sou programador</a>
-            <a href="#">Somos empresa contratando</a>
-        </section>
-
-        <section class="languages">
-            <h1>Linguagens</h1>
-            <div class="cards">
-                <div class="card">Ruby</div>
-                <div class="card">JavaScript</div>
-                <div class="card">Elixir</div>
-                <div class="card">Python</div>
-                <div class="card">Go</div>
+      <section class="intro gray">
+        <div class="container">
+            <div class="hero">
+                <h1>
+                    Ajudamos <strong>programadores</strong> a conseguirem seus
+                    <strong>primeiros empregos</strong>.
+                </h1>
+                <p>Mais de 100 mil desenvolvedores já conseguiram o seu primeiro emprego usando nosso sistema</p>
+                <div class="cta">
+                <a class="button primary" href="#">Sou programador</a>
+                <a class="button secondary" href="#">Somos empresa contratando</a>
             </div>
-        </section>
+        </div>
+        </div>
+      </section>
 
-        <section class="team">
-            <h1>Nosso time</h1>
-            <div class="members">
-                <div class="member"><img src="images/team/walter.jpg" /></div>
-            </div>
+      <section class="languages">
+        <div class="container">
+          <h1 class="title">Linguagens</h1>
+          <div class="cards">
+            <div class="card red">Ruby</div>
+            <div class="card blue">JavaScript</div>
+            <div class="card purple">Elixir</div>
+            <div class="card yellow">Python</div>
+            <div class="card green">Go</div>
+          </div>
+        </div>
+      </section>
 
-            <div class="members">
-                <div class="member"><img src="images/team/jesse.jpg" /></div>
-            </div>
+      <section class="team gray">
+        <div class="container">
+          <h1 class="title">Nosso time</h1>
+          <div class="members">
+            <div class="member"><img src="images/team/walter.jpg" /></div>
+            <div class="member"><img src="images/team/jesse.jpg" /></div>
+            <div class="member"><img src="images/team/skyler.jpg" /></div>
+            <div class="member"><img src="images/team/hank.jpg" /></div>
+            <div class="member"><img src="images/team/gus.jpg" /></div>
+            <div class="member"><img src="images/team/mike.jpg" /></div>
+            <div class="member"><img src="images/team/saul.jpg" /></div>
+        </div>
+      </section>
 
-            <div class="members">
-                <div class="member"><img src="images/team/skyler.jpg" /></div>
-            </div>
+      <footer>
+        <div class="container">
+          <ul>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Carreira</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
 
-            <div class="members">
-                <div class="member"><img src="images/team/hank.jpg" /></div>
-            </div>
-
-            <div class="members">
-                <div class="member"><img src="images/team/gus.jpg" /></div>
-            </div>
-
-            <div class="members">
-                <div class="member"><img src="images/team/mike.jpg" /></div>
-            </div>
-
-            <div class="members">
-                <div class="member"><img src="images/team/saul.jpg" /></div>
-            </div>
-
-        </section>
-
-        <section class="languages">
-            <h1>Linguagens</h1>
-        </section>
-
-        <footer>
-            <ul>
-                <li><a href="#">Política de privacidade</a></li>
-                <li><a href="#">Carreira</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Youtube</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
-
-            <p>© Massa. Todos os diretos reservados.</p>
-        </footer>
+          <p class="copyright">© Massa. Todos os diretos reservados.</p>
+        </div>
+      </footer>
     </main>
-
-</body>
-
+  </body>
 </html>
