@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
 /* Reset CSS */
 * {
   margin: 0;
@@ -7,10 +9,7 @@
 
 body {
   background-color: #f9f9f9;
-}
-
-header,
-section {
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -41,6 +40,14 @@ header {
   color: #2c5fd5;
   font-weight: bold;
   text-decoration: none;
+}
+
+.subscribe .button {
+  border: none;
+  background-color: #fb2300;
+  color: white;
+  padding: 10px 16px;
+  text-transform: uppercase;
 }
 
 main {
@@ -75,32 +82,94 @@ main {
 }
 
 .video-info {
-  background-color: #e91e63;
   grid-area: video-info;
+  padding: 0 0 1rem 1rem;
+}
+
+.video-info h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.video-info .views {
+  color: #606060;
 }
 
 .actions {
-  background-color: #03a9f4;
   grid-area: actions;
+  border-bottom: 1px solid #ddd;
+  padding: 0 1rem 0.5rem 1rem;
+  color: #636363;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-evenly;
+  align-items: end;
+  grid-gap: 1rem;
+}
+
+.action {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.action:last-child {
+  grid-template-columns: auto;
+}
+
+.action svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .channel {
-  background-color: #673ab7;
   grid-area: channel;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  grid-gap: 1rem;
+}
+
+.channel img {
+  width: 48px;
+  border-radius: 50%;
+}
+
+.channel .date {
+  color: #777;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.channel .channel-description {
+  font-size: 0.8rem;
 }
 
 .subscribe {
-  background-color: #8bc34a;
   grid-area: subscribe;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: right;
 }
 
 .ad {
-  background-color: #ff5722;
   grid-area: ad;
+  margin: 1rem;
+  padding: 4rem;
+  text-align: center;
+  background-color: #2196f3;
+  color: white;
 }
 
 .up-next {
-  background-color: #3f51b5;
   grid-area: up-next;
 }
 
